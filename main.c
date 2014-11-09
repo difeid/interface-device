@@ -166,7 +166,7 @@ void ReceiveFromAbonentAbonentState()
 
 	if(C1Came) // Если сигнал С1 приходил
 	{
-		abonentState = PINA; // Выдаём на выводы порта B байт
+		abonentState = PINB; // Выдаём на выводы порта B байт
 	}
 	
 	if(!C1 && C1Came) // Если сигнал С1 ушёл и приходил
