@@ -94,7 +94,7 @@ void ReceiveFrameFromArbiter()
 void WaitAddressFromArbiter()
 {
 	DDRA = 0x00; // Указываем микроконтроллеру настроить все выводы на приём информации
-	bool attentionCame = false;
+	static  bool attentionCame = false;
 	ReceiveFrameFromArbiter(); // Получить байт от Арбитра
 
 	if(frameCameFromArbiter) // Если байт от Арбитра пришёл
